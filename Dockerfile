@@ -1,7 +1,5 @@
 FROM resin/rpi-raspbian:jessie
 
-ENV NGINX_VERSION 1.10.0-1~jessie
-
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list.d/jessie-backports.list \
 	&& apt-get --allow-unauthenticated update \
 	&& apt-get -t jessie-backports install --allow-unauthenticated --no-install-recommends --no-install-suggests -y \
