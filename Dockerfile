@@ -5,6 +5,7 @@ RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/so
 	&& apt-get -t jessie-backports install --allow-unauthenticated --no-install-recommends --no-install-suggests -y \
 						ca-certificates \
 						nginx-full \
+                                                cron \
 						gettext-base \
 	&& rm -rf /var/lib/apt/lists/*
 
