@@ -1,8 +1,8 @@
 FROM resin/rpi-raspbian:jessie
 
-RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list.d/jessie-backports.list \
+RUN echo "deb http://ftp.debian.org/debian stretch main" >> /etc/apt/sources.list.d/stretch.list \
 	&& apt-get --allow-unauthenticated update \
-	&& apt-get -t jessie-backports install --allow-unauthenticated --no-install-recommends --no-install-suggests -y \
+	&& apt-get -t stretch install --allow-unauthenticated --no-install-recommends --no-install-suggests -y \
 						ca-certificates \
 						nginx-full \
                                                 cron \
